@@ -1,5 +1,5 @@
-
 ### Source 
+
 The main 'geoname' table has the following fields :
 ---------------------------------------------------
 geonameid         : integer id of record in geonames database
