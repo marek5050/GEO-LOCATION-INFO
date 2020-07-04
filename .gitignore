@@ -1,0 +1,6 @@
+.*.swp
+cache/*
+.idea
+tmp
+.DS_STORE
+venv

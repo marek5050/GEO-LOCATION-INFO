@@ -1,0 +1,145 @@
+{
+  "name": "city-country-information",
+  "title": "Geo location information.",
+  "version": "1.0",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "resources": [
+    {
+      "name": "cities-15000",
+      "path": "data/cities15000.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "geonameid",
+            "description": "integer id of record in geonames database",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "description": "name of geographical point (utf8)",
+            "type": "string"
+          },
+          {
+            "name": "asciiname",
+            "description": "name of geographical point in plain ascii characters",
+            "type": "string"
+          },
+          {
+            "name": "alternatenames",
+            "description": "alternatenames, comma separated, ascii names automatically transliterated, convenience attribute from alternatename table",
+            "type": "string"
+          },
+          {
+            "name": "latitude",
+            "description": "latitude in decimal degrees",
+            "type": "string"
+          },
+          {
+            "name": "longitude",
+            "description": "longitude in decimal degrees",
+            "type": "string"
+          },
+          {
+            "name": "feature class",
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "feature code",
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "country code",
+            "description": "ISO-3166 2-letter country code, 2 characters",
+            "type": "string"
+          },
+          {
+            "name": "cc2",
+            "description": "alternate country codes, comma separated",
+            "type": "string"
+          },
+          {
+            "name": "admin1 code",
+            "description": "fipscode (subject to change to iso code)",
+            "type": "string"
+          },
+          {
+            "name": "admin2 code",
+            "description": "code for the second administrative division,a county in the US",
+            "type": "string"
+          },
+          {
+            "name": "admin3 code",
+            "description": "code for third level administrative division",
+            "type": "string"
+          },
+          {
+            "name": "admin4 code",
+            "description": "code for fourth level administrative division",
+            "type": "string"
+          },
+          {
+            "name": "population",
+            "description": "bigint",
+            "type": "string"
+          },
+          {
+            "name": "elevation",
+            "description": "in meters, integer",
+            "type": "string"
+          },
+          {
+            "name": "dem",
+            "description": "digital elevation model, srtm3 or gtopo30, average elevation of 3''x3'' (ca 90mx90m) or 30''x30'' (ca 900mx900m) area in meters, integer. srtm processed by cgiar/ciat.",
+            "type": "string"
+          },
+          {
+            "name": "timezone",
+            "description": "the iana timezone id",
+            "type": "string"
+          },
+          {
+            "name": "modification date",
+            "description": "date of last modification in yyyy-MM-dd format# GEO-LOCATION-INFO",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "related": [
+    {
+      "title": "S&P 500 Index Data",
+      "path": "/core/s-and-p-500",
+      "publisher": "core",
+      "formats": ["CSV", "JSON"]
+    },
+    {
+      "title": "S&P 500 Companies with Financial Information",
+      "path": "/core/s-and-p-500-companies-financials",
+      "publisher": "core",
+      "formats": ["CSV", "JSON"]
+    },
+    {
+      "title": "VIX - CBOE Volatility Index",
+      "path": "/core/finance-vix",
+      "publisher": "core",
+      "formats": ["CSV", "JSON"]
+    },
+    {
+      "title": "NYSE and Other Listings",
+      "path": "/core/nyse-other-listings",
+      "publisher": "core",
+      "formats": ["CSV", "JSON"]
+    }
+  ]
+}
