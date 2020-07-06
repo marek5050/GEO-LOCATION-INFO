@@ -25,7 +25,7 @@ modification date : date of last modification in yyyy-MM-dd format# GEO-LOCATION
 ```
 
 Sample:
-Last updated:  Sun Jul 5 12:58:58 UTC 2020
+Last updated:  Mon Jul 6 01:09:17 UTC 2020
 
 *cities500.csv*
 ```
